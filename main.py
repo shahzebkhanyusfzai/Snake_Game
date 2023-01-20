@@ -36,10 +36,8 @@ while game_is_on:
         game_is_on = False 
         score.gameover()
 
-    for s in cobra.seg:
-        if s == cobra.head:
-            pass
-        elif cobra.head.distance(s)<10:
+    for s in cobra.seg[1:]
+        if cobra.head.distance(s)<10:
             game_is_on = False 
             score.gameover()            
            
